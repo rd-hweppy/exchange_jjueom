@@ -1,0 +1,19 @@
+# Netlify 캐시 규칙 (배포 폴더 맨 위에 있어야 함 — tools/build-deploy.sh가 복사)
+# assets/: 1년 동안 다시 묻지 않고 캐시. 이미 배포한 파일의 내용을 바꿀 땐 반드시 파일 이름(경로)도 바꾸세요!
+#   같은 이름으로 덮어쓰면 한 번 열어 본 폰은 옛 파일을 계속 씁니다.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# 페이지·이야기·코드: 매번 바뀌었는지 확인 (안 바뀌었으면 304로 아주 작게 끝남)
+/
+  Cache-Control: no-cache
+/index.html
+  Cache-Control: no-cache
+/story.json
+  Cache-Control: no-cache
+/replies.json
+  Cache-Control: no-cache
+/js/*
+  Cache-Control: no-cache
+/css/*
+  Cache-Control: no-cache

@@ -1778,6 +1778,7 @@ body{font-family:var(--font)}
 .callscreen.ft.live{background:#000}
 .ft-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.15);opacity:0;transition:opacity .4s} /* 1.15배: 원본 오른쪽 위 위버스 로고가 화면 밖으로 (얼굴은 안 잘림) */
 .has-video .ft-video{opacity:1}
+.ft-video.composed{transform:none;object-position:50% 0} /* 합친 영상: 확대·로고 자르기는 영상에 이미 들어 있음. 화면이 더 넓으면(Safari 주소창) 아래만 잘려 작은 화면 위치가 그대로 */
 .ft-ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:rgba(255,255,255,.5);font-size:16px;background:radial-gradient(circle at 50% 40%,#3b3f48,#121317);text-align:center}
 .ft-ph small{font-size:12px}
 .has-video .ft-ph{display:none}

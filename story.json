@@ -7101,9 +7101,10 @@
       ],
       "ending": {
         "contact": "juhoon",
-        "video": ["videos/티키타카_LA_720.mp4", "videos/티키타카_대답_540.mp4"],
+        "video": "videos/티키타카_영상통화.mp4",
+        "composed": true,
         "placeholderSec": 15,
-        "_설명": "영상통화(오프닝 뒤). 큰 화면 주훈·작은 화면 성현 두 영상이 함께, 주훈 영상이 끝나면 종료. 끝나면 통화 전 화면으로 돌아감. 뒤 흐름: docs/replies/juhoon-stages.md",
+        "_설명": "영상통화(오프닝 뒤). 큰 화면 주훈·작은 화면 성현 두 영상이 함께, 주훈 영상이 끝나면 종료. composed: video 하나에 두 화면·두 소리를 미리 합쳐 둔 영상(티키타카_LA + 티키타카_대답, 아이폰 Safari는 소리 있는 영상을 하나만 재생하므로) → 확대·작은 화면 칸 없이 그대로 보여 줌. 끝나면 통화 전 화면으로 돌아감. 뒤 흐름: docs/replies/juhoon-stages.md",
         "endHoldSec": 1.2
       }
     },
